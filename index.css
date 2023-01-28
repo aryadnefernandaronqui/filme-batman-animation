@@ -1,0 +1,302 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+  background-image: url(./images/fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Fonte-do-batman", Arial, sans-serif;
+}
+section {
+  height: 100%;
+  width: 100%;
+}
+.central {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.morcego {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 22%;
+  top: 5%;
+  z-index: 2;
+  rotate: -30deg;
+  width: 160px;
+  height: 160px;
+  animation: morcego 0.7s infinite linear, morcego-voando 5s linear;
+}
+@keyframes morcego {
+  0% {
+    background-image: url(./images/bat/bat1.png);
+  }
+  2.85% {
+    background-image: url(./images/bat/bat2.png);
+  }
+  5.7% {
+    background-image: url(./images/bat/bat3.png);
+  }
+  8.55% {
+    background-image: url(./images/bat/bat4.png);
+  }
+  11.4% {
+    background-image: url(./images/bat/bat5.png);
+  }
+  14.25% {
+    background-image: url(./images/bat/bat6.png);
+  }
+  17.1% {
+    background-image: url(./images/bat/bat7.png);
+  }
+  19.95% {
+    background-image: url(./images/bat/bat8.png);
+  }
+  22.8% {
+    background-image: url(./images/bat/bat9.png);
+  }
+  25.65% {
+    background-image: url(./images/bat/bat10.png);
+  }
+  28.5% {
+    background-image: url(./images/bat/bat11.png);
+  }
+  31.35% {
+    background-image: url(./images/bat/bat12.png);
+  }
+  34.2% {
+    background-image: url(./images/bat/bat13.png);
+  }
+  37.05% {
+    background-image: url(./images/bat/bat14.png);
+  }
+  39.9% {
+    background-image: url(./images/bat/bat15.png);
+  }
+  42.75% {
+    background-image: url(./images/bat/bat16.png);
+  }
+  45.6% {
+    background-image: url(./images/bat/bat17.png);
+  }
+  48.45% {
+    background-image: url(./images/bat/bat18.png);
+  }
+  51.3% {
+    background-image: url(./images/bat/bat17.png);
+  }
+  54.15% {
+    background-image: url(./images/bat/bat16.png);
+  }
+  57% {
+    background-image: url(./images/bat/bat15.png);
+  }
+  59.85% {
+    background-image: url(./images/bat/bat14.png);
+  }
+  62.7% {
+    background-image: url(./images/bat/bat13.png);
+  }
+  65.55% {
+    background-image: url(./images/bat/bat12.png);
+  }
+  68.4% {
+    background-image: url(./images/bat/bat11.png);
+  }
+  71.25% {
+    background-image: url(./images/bat/bat10.png);
+  }
+  74.1% {
+    background-image: url(./images/bat/bat9.png);
+  }
+  76.95% {
+    background-image: url(./images/bat/bat8.png);
+  }
+  79.8% {
+    background-image: url(./images/bat/bat7.png);
+  }
+  82.65% {
+    background-image: url(./images/bat/bat6.png);
+  }
+  85.5% {
+    background-image: url(./images/bat/bat5.png);
+  }
+  88.35% {
+    background-image: url(./images/bat/bat4.png);
+  }
+  91.2% {
+    background-image: url(./images/bat/bat3.png);
+  }
+  94.5% {
+    background-image: url(./images/bat/bat2.png);
+  }
+  100% {
+    background-image: url(./images/bat/bat1.png);
+  }
+}
+
+@keyframes morcego-voando {
+  0% {
+    left: calc(50% - 80px);
+    top: 60%;
+    rotate: -30deg;
+    width: 160px;
+    height: 160px;
+  }
+  100% {
+    left: 22%;
+    top: 5%;
+    rotate: -30deg;
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(50% - 400px);
+  width: 800px;
+  height: 383px;
+  animation: logo 5s;
+  animation-iteration-count: 1;
+}
+@keyframes logo {
+  0% {
+    top: 300px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 95px;
+  }
+  100% {
+    top: 0;
+    left: calc(50% - 400px);
+    width: 800px;
+    height: 383px;
+  }
+}
+
+.batman {
+  position: absolute;
+  z-index: 3;
+  top: 70px;
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 750px;
+  animation: batman 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes batman {
+  0% {
+    top: 70px;
+    left: calc(50% - 225px);
+    width: 450px;
+    height: 843px;
+  }
+  100% {
+    top: 70px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 750px;
+  }
+}
+
+.fundo-preto {
+  background-color: rgba(0, 0, 0, 0.461);
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.fundo-nuvem {
+  background-image: url(./images/fundo-nuvem.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 4;
+  opacity: 1;
+  animation: fundoNuvem 10s;
+}
+@keyframes fundoNuvem {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "Fonte-do-batman";
+  src: url("./assets/GothamWomans-B8md.ttf") format("truetype");
+}
+
+.batsinal {
+  position: absolute;
+  left: calc(50% - 250px);
+  z-index: 6;
+  opacity: 0.5;
+  filter: blur(3px);
+  animation: batsinal 2s infinite;
+}
+
+@keyframes batsinal {
+  0% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.fonte-batman {
+  text-shadow: 1px 1px 5px rgba(255, 217, 0, 0.906);
+  position: absolute;
+  top: 500px;
+  filter: blur(0.2px);
+}
+h1 {
+  left: calc(50% - 215px);
+  margin: 10px;
+  font-size: 45px;
+}
+h2 {
+  margin-top: 100px;
+  left: calc(50% - 200px);
+  font-size: 25px;
+}
